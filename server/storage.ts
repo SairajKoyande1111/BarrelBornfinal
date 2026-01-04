@@ -76,7 +76,19 @@ export class MongoStorage implements IStorage {
     "signature-cocktails",
     "wine-cocktails",
     "sangria",
-    "signature-shots"
+    "signature-shots",
+    "indian-mains---curries",
+    "biryanis-rice",
+    "bao-dimsum",
+    "entree",
+    "rice-with-curry---thai-asian-bowls",
+    "thai-bowls",
+    "starters",
+    "tandoor-starters",
+    "oriental-starters",
+    "sizzlers",
+    "sliders",
+    "pizza"
   ];
 
   constructor(connectionString: string) {
@@ -109,7 +121,7 @@ export class MongoStorage implements IStorage {
       'blended-whisky': 'blended-whisky',
       'blended-scotch-whisky': 'blended-scotch-whisky',
       'american-irish-whiskey': 'american-irish-whiskey',
-      'single-malt-whiskey': 'single-malt-whiskey',
+      'single-malt-whisky': 'single-malt-whisky',
       'vodka': 'vodka',
       'gin': 'gin',
       'rum': 'rum',
@@ -131,7 +143,18 @@ export class MongoStorage implements IStorage {
       'signature-cocktails': 'signature-cocktails',
       'wine-cocktails': 'wine-cocktails',
       'sangria': 'sangria',
-      'signature-shots': 'signature-shots'
+      'signature-shots': 'signature-shots',
+      'biryanis-rice': 'biryanis-rice',
+      'bao-dimsum': 'bao-dimsum',
+      'entree': 'entree',
+      'rice-with-curry---thai-asian-bowls': 'rice-with-curry---thai-asian-bowls',
+      'thai-bowls': 'thai-bowls',
+      'starters': 'starters',
+      'tandoor-starters': 'tandoor-starters',
+      'oriental-starters': 'oriental-starters',
+      'sizzlers': 'sizzlers',
+      'sliders': 'sliders',
+      'pizza': 'pizza'
     };
 
     this.categories.forEach(category => {
