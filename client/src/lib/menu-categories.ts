@@ -28,15 +28,15 @@ export const foodSubcategories: SubCategory[] = [
   { id: "pasta", displayLabel: "Pasta", dbCategory: "pasta" },
   { id: "artisan-pizzas", displayLabel: "Artisan Pizzas", dbCategory: "artisan-pizzas" },
   { id: "mini-burger-sliders", displayLabel: "Mini Burger Sliders", dbCategory: "mini-burger-sliders" },
-  { id: "entree", displayLabel: "Entree (Main Course)", dbCategory: "entree-(main-course)" },
-  { id: "bao-dimsum", displayLabel: "Bao & Dim Sum", dbCategory: "bao-&-dim-sum" },
-  { id: "indian-mains-curries", displayLabel: "Indian Mains - Curries", dbCategory: "indian-mains---curries" },
-  { id: "biryanis-rice", displayLabel: "Biryanis & Rice", dbCategory: "biryanis-&-rice" },
+  { id: "entree", displayLabel: "Entree (Main Course)", dbCategory: "entree" },
+  { id: "bao-dimsum", displayLabel: "Bao & Dim Sum", dbCategory: "bao-dimsum" },
+  { id: "indian-mains-curries", displayLabel: "Indian Mains - Curries", dbCategory: "indian-mains-curries" },
+  { id: "biryanis-rice", displayLabel: "Biryanis & Rice", dbCategory: "biryanis-rice" },
   { id: "dals", displayLabel: "Dals", dbCategory: "dals" },
   { id: "breads", displayLabel: "Breads", dbCategory: "breads" },
   { id: "asian-mains", displayLabel: "Asian Mains", dbCategory: "asian-mains" },
-  { id: "rice-with-curry---thai-asian-bowls", displayLabel: "Rice with Curry - Thai & Asian Bowls", dbCategory: "rice-with-curry---thai-&-asian-bowls" },
-  { id: "rice-noodles", displayLabel: "Rice & Noodles", dbCategory: "rice-&-noodles" },
+  { id: "rice-with-curry---thai-asian-bowls", displayLabel: "Rice with Curry - Thai & Asian Bowls", dbCategory: "rice-with-curry---thai-asian-bowls" },
+  { id: "rice-noodles", displayLabel: "Rice & Noodles", dbCategory: "rice-noodles" },
 ];
 
 // BAR subcategories - Whiskey has sub-subcategories, Wine has sub-subcategories
