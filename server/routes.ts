@@ -7,14 +7,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Menu items routes
   app.get("/api/menu-items", async (req, res) => {
     try {
-      // Check for category query param: ?category=nibbles
-      const categoryQuery = (req.query.category as string) || (req.params.category as string);
-      
+      const categoryQuery = (req.query.category as string) || (req.params as any).category;
+      console.log(`[API] Fetching menu items for category: ${categoryQuery}`);
+
       if (categoryQuery) {
         const items = await storage.getMenuItemsByCategory(categoryQuery);
         return res.json(items);
       }
-      
+
       // No category param, return all items
       const items = await storage.getMenuItems();
       res.json(items);
@@ -30,19 +30,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(items);
     } catch (error) {
       res.status(500).json({ message: "Failed to fetch menu items by category" });
-    }
-  });
-
-  app.get("/api/menu-items/:id", async (req, res) => {
-    try {
-      const id = req.params.id;
-      const item = await storage.getMenuItem(id);
-      if (!item) {
-        return res.status(404).json({ message: "Menu item not found" });
-      }
-      res.json(item);
-    } catch (error) {
-      res.status(500).json({ message: "Failed to fetch menu item" });
     }
   });
 

@@ -10,12 +10,6 @@ import { Button } from "@/components/ui/button";
 import { mainCategories } from "@/lib/menu-categories";
 import HamburgerMenu from "@/components/hamburger-menu";
 
-import carouselImg1 from "@assets/5_1766732327395.JPG";
-import carouselImg2 from "@assets/1_1766732327396.JPG";
-import carouselImg3 from "@assets/2_1766732327396.JPG";
-import carouselImg4 from "@assets/3_1766732327397.JPG";
-import carouselImg5 from "@assets/4_1766732327397.JPG";
-
 import premiumFoodImg from "@assets/image_1765866040643.png";
 import premiumBarImg from "@assets/stock_images/premium_whisky_cockt_68b3295e.jpg";
 import premiumDessertsImg from "@assets/image_1765866710467.png";
@@ -26,11 +20,11 @@ import logoImg from "@assets/Untitled_design_(20)_1765720426678.png";
 import fallbackImg from "@assets/coming_soon_imagev2_1766811809828.jpg";
 
 const promotionalImages = [
-  { id: 1, src: carouselImg1, alt: "Restaurant Interior" },
-  { id: 2, src: carouselImg2, alt: "Bar & Dining Area" },
-  { id: 3, src: carouselImg3, alt: "Modern Ambiance" },
-  { id: 4, src: carouselImg4, alt: "Contemporary Dining" },
-  { id: 5, src: carouselImg5, alt: "Elegant Seating" },
+  { id: 1, src: "/attached_assets/5_1766732327395.JPG", alt: "Restaurant Interior" },
+  { id: 2, src: "/attached_assets/1_1766732327396.JPG", alt: "Bar & Dining Area" },
+  { id: 3, src: "/attached_assets/2_1766732327396.JPG", alt: "Modern Ambiance" },
+  { id: 4, src: "/attached_assets/3_1766732327397.JPG", alt: "Contemporary Dining" },
+  { id: 5, src: "/attached_assets/4_1766732327397.JPG", alt: "Elegant Seating" },
 ];
 
 const categoryImages: Record<string, string> = {
